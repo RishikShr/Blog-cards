@@ -3,41 +3,45 @@
 	margin: 0;
 	padding: 0;
 }
-
+/* 
 body{
-	
-	background-color:#09c719;
-   
-}	
+   	
+	background-color: linear;
+}	 */
 	
 	
 
-.container {
-	background-color:#07041c;
+body {
+	background-color:grey;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh; 
-   margin: 0;
-   background-image: url(./images/undraw_mobile_images_rc0q.svg);
+    height: 100vh;
    
-  }
+}
+
+ 
+.svg{
+	width: 95%;
+}
+   
+  
 .container{
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
-	width: 1000px;
+	width: 100%;
 	gap: 20px;
-	margin: auto;
+	
 	
 	
 }
 .card{
-	background: rgb(184, 241, 27);
+	background:white;
 	border-radius: 10px;
 	box-shadow: 0 20px 20px rgb(0,0,0,2);
 	overflow: hidden;
-	width: 300px;
+	width: 100%;
 }
 .card-header img{
 	width: 100%;
@@ -93,5 +97,8 @@ body{
 		.container{
 			grid-template-columns: 1fr;
 			justify-items: center;
+		}
+		body{
+			height: 100%;
 		}
 }
